@@ -28,11 +28,11 @@ import { ethers, utils } from 'ethers'
 import {
   EthersConstantsUtil,
   EthersHelpersUtil,
-  EthersStoreUtil
-} from '@web3modal/scaffold-utils/ethers'
+  EthersStoreUtil} from '@web3modal/scaffold-utils/ethers'
 import type { EthereumProviderOptions } from '@walletconnect/ethereum-provider'
 import { NetworkUtil } from '@web3modal/common'
 import type { Chain as AvailableChain } from '@web3modal/common'
+import {RELAY_URL} from "@apps/laboratory/src/utils/ConstantsUtil";
 
 // -- Types ---------------------------------------------------------------------
 export interface Web3ModalClientOptions extends Omit<LibraryOptions, 'defaultChain' | 'tokens'> {
@@ -42,7 +42,8 @@ export interface Web3ModalClientOptions extends Omit<LibraryOptions, 'defaultCha
   defaultChain?: Chain
   chainImages?: Record<number, string>
   connectorImages?: Record<string, string>
-  tokens?: Record<number, Token>
+  tokens?: Record<number, Token>,
+  relayUrl?: String
 }
 
 type CoinbaseProviderError = {
@@ -530,7 +531,8 @@ export class Web3Modal extends Web3ModalScaffold {
         description: this.metadata ? this.metadata.description : '',
         url: this.metadata ? this.metadata.url : '',
         icons: this.metadata ? this.metadata.icons : ['']
-      }
+      },
+      relayUrl: this.options?.relayUrl || RELAY_URL
     }
 
     this.walletConnectProvider = await EthereumProvider.init(walletConnectProviderOptions)

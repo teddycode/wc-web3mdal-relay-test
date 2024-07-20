@@ -120,7 +120,7 @@ export class Web3Modal extends Web3ModalScaffold {
         this.syncNetwork(chainImages);
         this.walletAdapters = wallets;
         this.WalletConnectConnector = new WalletConnectConnector({
-            relayerRegion: 'wss://relay.walletconnect.com',
+            relayerRegion: 'ws://123.157.213.104:3010',
             metadata,
             chains,
             qrcode: true
