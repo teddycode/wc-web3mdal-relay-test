@@ -1,3 +1,4 @@
+export declare const RELAY_URL = "ws://123.157.213.104:3010";
 export declare const ONRAMP_PROVIDERS: {
     label: string;
     name: string;

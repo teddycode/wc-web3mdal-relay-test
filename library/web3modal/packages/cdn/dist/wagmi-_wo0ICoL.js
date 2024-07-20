@@ -20653,7 +20653,7 @@ function rx(e) {
     async getProvider() {
       if (!n) {
         const i = await (async () => {
-          const { default: c } = await import("./index-C3olmUqo.js").then((l) => l.i);
+          const { default: c } = await import("./index-D610BvVt.js").then((l) => l.i);
           return typeof c != "function" && typeof c.default == "function" ? c.default : c;
         })();
         t = new i({
@@ -23437,7 +23437,7 @@ function gA(e) {
     async getProvider() {
       if (!n) {
         const i = await (async () => {
-          const { default: c } = await import("./index-D610BvVt.js").then((l) => l.i);
+          const { default: c } = await import("./index-C3olmUqo.js").then((l) => l.i);
           return typeof c != "function" && typeof c.default == "function" ? c.default : c;
         })();
         t = new i({
