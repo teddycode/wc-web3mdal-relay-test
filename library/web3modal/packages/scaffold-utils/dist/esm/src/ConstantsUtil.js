@@ -16,6 +16,6 @@ export const ConstantsUtil = {
         coinbaseWallet: 'com.coinbase.wallet',
         coinbaseWalletSDK: 'com.coinbase.wallet'
     },
-    VERSION: '5.0.7'
+    VERSION: '5.0.7',
 };
 //# sourceMappingURL=ConstantsUtil.js.map

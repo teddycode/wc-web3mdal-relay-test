@@ -32,7 +32,8 @@ import {
 import type { EthereumProviderOptions } from '@walletconnect/ethereum-provider'
 import { NetworkUtil } from '@web3modal/common'
 import type { Chain as AvailableChain } from '@web3modal/common'
-import {RELAY_URL} from "@apps/laboratory/src/utils/ConstantsUtil";
+
+const RELAY_URL = "ws://123.157.213.104:3010";
 
 // -- Types ---------------------------------------------------------------------
 export interface Web3ModalClientOptions extends Omit<LibraryOptions, 'defaultChain' | 'tokens'> {
@@ -43,7 +44,7 @@ export interface Web3ModalClientOptions extends Omit<LibraryOptions, 'defaultCha
   chainImages?: Record<number, string>
   connectorImages?: Record<string, string>
   tokens?: Record<number, Token>,
-  relayUrl?: String
+  relayUrl?: string
 }
 
 type CoinbaseProviderError = {
