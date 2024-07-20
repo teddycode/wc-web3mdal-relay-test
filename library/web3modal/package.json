@@ -3,6 +3,7 @@
   "version": "4.0.0",
   "private": true,
   "type": "module",
+  "description": "For PunkOS",
   "scripts": {
     "build:clean": "turbo run build:clean",
     "build": "turbo run build:clean && turbo run build --concurrency=30",

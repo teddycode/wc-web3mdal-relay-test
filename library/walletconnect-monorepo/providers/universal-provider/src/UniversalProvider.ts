@@ -35,7 +35,7 @@ import {
   AuthenticateParams,
 } from "./types";
 
-import {RELAY_URL, LOGGER, STORAGE, PROVIDER_EVENTS, GENERIC_SUBPROVIDER_NAME, FALLBACK_RELAY_URL} from "./constants";
+import {LOGGER, STORAGE, PROVIDER_EVENTS, GENERIC_SUBPROVIDER_NAME, FALLBACK_RELAY_URL} from "./constants";
 import EventEmitter from "events";
 import { formatJsonRpcResult } from "@walletconnect/jsonrpc-utils";
 
@@ -290,7 +290,7 @@ export class UniversalProvider implements IUniversalProvider {
       this.providerOpts.client ||
       (await SignClient.init({
         logger: this.providerOpts.logger || LOGGER,
-        relayUrl: this.providerOpts.relayUrl || RELAY_URL || FALLBACK_RELAY_URL,
+        relayUrl: this.providerOpts.relayUrl || FALLBACK_RELAY_URL,
         projectId: this.providerOpts.projectId,
         metadata: this.providerOpts.metadata,
         storageOptions: this.providerOpts.storageOptions,

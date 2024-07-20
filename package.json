@@ -8,8 +8,10 @@
   },
   "dependencies": {
     "@walletconnect/core": "file:./library/walletconnect-monorepo/packages/core",
-    "@web3modal/ethers5": "^5.0.7",
-    "ethers": "5.7.2"
+    "@web3modal/ethers5": "file:./library/web3modal/packages/ethers5",
+    "ethers": "5.7.2",
+    "rimraf": "5.0.1",
+    "turbo": "1.11.3"
   },
   "devDependencies": {
     "vite": "5.2.11"
