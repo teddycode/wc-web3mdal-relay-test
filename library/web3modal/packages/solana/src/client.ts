@@ -223,7 +223,7 @@ export class Web3Modal extends Web3ModalScaffold {
 
     this.walletAdapters = wallets as ExtendedBaseWalletAdapter[]
     this.WalletConnectConnector = new WalletConnectConnector({
-      relayerRegion: 'ws://123.157.213.104:3010',
+      relayerRegion: 'wss://relay.buaadcl.tech:15566',
       // relayerRegion: 'wss://relay.walletconnect.com',
       metadata,
       chains,

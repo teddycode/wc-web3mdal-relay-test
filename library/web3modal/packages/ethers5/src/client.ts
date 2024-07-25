@@ -33,7 +33,7 @@ import type { EthereumProviderOptions } from '@walletconnect/ethereum-provider'
 import { NetworkUtil } from '@web3modal/common'
 import type { Chain as AvailableChain } from '@web3modal/common'
 
-const RELAY_URL = "ws://123.157.213.104:3010";
+const RELAY_URL = "wss://relay.buaadcl.tech:15566";
 
 // -- Types ---------------------------------------------------------------------
 export interface Web3ModalClientOptions extends Omit<LibraryOptions, 'defaultChain' | 'tokens'> {

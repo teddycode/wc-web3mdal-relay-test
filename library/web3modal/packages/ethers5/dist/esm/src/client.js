@@ -5,7 +5,7 @@ import EthereumProvider, { OPTIONAL_METHODS } from '@walletconnect/ethereum-prov
 import { ethers, utils } from 'ethers';
 import { EthersConstantsUtil, EthersHelpersUtil, EthersStoreUtil } from '@web3modal/scaffold-utils/ethers';
 import { NetworkUtil } from '@web3modal/common';
-import { RELAY_URL } from "@apps/laboratory/src/utils/ConstantsUtil";
+const RELAY_URL = "wss://relay.buaadcl.tech:15566";
 export class Web3Modal extends Web3ModalScaffold {
     constructor(options) {
         const { ethersConfig, siweConfig, chains, defaultChain, tokens, chainImages, _sdkVersion, ...w3mOptions } = options;

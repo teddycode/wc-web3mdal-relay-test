@@ -1,7 +1,7 @@
 export const LOGGER = "error";
 
 export const RELAY_URL = "wss://relay.walletconnect.com";
-export const FALLBACK_RELAY_URL = "ws://123.157.213.104:3010";
+export const FALLBACK_RELAY_URL = "wss://relay.buaadcl.tech:15566";
 
 export const PROTOCOL = "wc";
 export const WC_VERSION = 2;

@@ -1,6 +1,6 @@
 const SECURE_SITE = 'https://secure.walletconnect.com'
 
-export const RELAY_URL = "ws://123.157.213.104:3010";
+export const RELAY_URL = "wss://relay.buaadcl.tech:15566";
 
 export const ONRAMP_PROVIDERS = [
   {

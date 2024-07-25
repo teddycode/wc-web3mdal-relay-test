@@ -37,7 +37,8 @@ const modal = createWeb3Modal({
   ethersConfig: { ...ethersConfig, email: true },
   projectId,
   chains,
-  themeMode: 'light'
+  themeMode: 'light',
+  relayUrl: 'wss://relay.buaadcl.tech:15566'
 })
 
 // 4. Trigger modal programaticaly

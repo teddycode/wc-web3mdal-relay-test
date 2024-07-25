@@ -1,7 +1,7 @@
 export declare const RELAYER_DEFAULT_PROTOCOL = "irn";
 export declare const RELAYER_DEFAULT_LOGGER = "error";
 export declare const RELAYER_DEFAULT_RELAY_URL = "wss://relay.walletconnect.org";
-export declare const RELAYER_FALLBACK_RELAY_URL = "ws://123.157.213.104:3010";
+export declare const RELAYER_FALLBACK_RELAY_URL = "wss://relay.buaadcl.tech:15566";
 export declare const RELAYER_CONTEXT = "relayer";
 export declare const RELAYER_EVENTS: {
     message: string;
