@@ -41,6 +41,9 @@ const modal = createWeb3Modal({
   relayUrl: 'wss://relay.buaadcl.tech:15566'
 })
 
+modal.subscribeEvents((e)=>{
+  console.log("产生事件：",e.data);
+})
 // 4. Trigger modal programaticaly
 const openConnectModalBtn = document.getElementById('open-connect-modal')
 const openNetworkModalBtn = document.getElementById('open-network-modal')
